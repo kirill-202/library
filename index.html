@@ -7,6 +7,41 @@
     <title>Library</title>
 </head>
 <body>
+    <dialog id="dialog" class="dialog">
+        <form method="dialog">
+            <h2>Enter Book Details</h2>
     
+            <p>
+                <label for="author">
+                    Author:
+                    <input type="text" id="author" name="author" required />
+                </label>
+            </p>
+    
+            <p>
+                <label for="title">
+                    Title:
+                    <input type="text" id="title" name="title" required />
+                </label>
+            </p>
+    
+            <p>
+                <label for="dateIssued">
+                    Date Issued:
+                    <input type="date" id="dateIssued" name="dateIssued" required />
+                </label>
+            </p>
+    
+            <div>
+                <button type="submit">Submit</button>
+                <button type="button" id="closeFormBtn">Close</button>
+            </div>
+        </form>
+    </dialog>
+    <h1>This is your Local Library</h1>
+    <button class="new-book-button">Add new book</button>
+    <div id="dialog-container"></div>
+    <div class="container"></div>
+    <script src="main.js"></script>
 </body>
 </html>
